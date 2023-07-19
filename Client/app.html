@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="img">
+    <div id="card1">
+        <form class="form">
+            <h2>Enter your desired characteristics</h2>
+            <label for="uiSqft">Area(sqft)</label>
+            <div class="select">
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+            </div>
+            <label for="uiBHK">BHK</label>
+            <div class="select">
+            <select id="uiBHK">
+                <option value="" disabled="disabled" selected="selected">Choose BHK</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span class="focus"></span>
+            </div>
+            <label for="uiBathrooms">Bathrooms</label>
+            <div class="select">
+            <select id="uiBathrooms">
+                <option value="" disabled="disabled" selected="selected">Choose number of bathrooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span class="focus"></span>
+            </div>
+            <label for="uiLocations">Location</label>
+            <div class="select">
+            <select id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a location</option>
+            </select>
+            <span class="focus"></span>
+            </div>
+            <br><br>
+            <div>
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+            </div>
+        </form>
+    </div>
+    <div id="card2">
+        <div id="uiEstimatedPrice" class="result">
+            <h2></h2>
+        </div>
+    </div>
+</body>
+
+</html>
